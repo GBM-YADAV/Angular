@@ -1,0 +1,19 @@
+
+<h2 > my friends details</h2>
+
+<table class="table table-bordered table-hover">
+    <thead >
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>D.O.B</th>
+    </thead>
+    <tr *ngFor="let s of stulist">
+        <td>{{s.rollno}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.marks}}</td>
+        <td>{{s.dateofbirth|date:'short'}}</td>
+
+    </tr>
+</table>
+

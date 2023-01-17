@@ -1,0 +1,74 @@
+<div class="container" >
+    <div class="row ">
+        <div class="col-md-6 mx-auto">
+    
+            <h1>New User</h1>
+            <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+    
+                <div class="form-group">
+                    <label for="firstname">First Name </label>
+                    <input class="form-control" type="text" id="firstname" name="firstname" #firstname="ngModel" placeholder="enter ur firstname name" ngModel>
+                <div
+                    *ngif="firstname.touched && firstname.invalid " class="alert alert-danger">
+                    <p *ngIf="firstname.hasError('required')">Firstname is required</p>
+                    <p *ngIf="firstname.hasError('minlength')">minimum length should be 3</p>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name </label>
+                    <input class="form-control" type="text" id="lastname" name="lastname" #lastname="ngModel" ngModel>
+                    <div
+                    *ngif="lastname.touched && lastname.invalid " class="alert alert-danger">
+                    <p *ngIf="lastname.hasError('required')">Firstname is required</p>
+                    <p *ngIf="lastname.hasError('maxlength')">minimum length should be 3</p>
+                </div>
+                </div>
+                <div class="form-group">
+    
+                    <label for="email">Email</label>
+    
+                    <input class="form-control" type="text" id="email" name="email" #email="ngModel" ngModel>
+    
+                    <div
+                    *ngif="email.touched && email.invalid " class="alert alert-danger">
+                    <p *ngIf="email.hasError('required')">Firstname is required</p>
+                    <p *ngIf="email.hasError('pattern')">minimum length should be 3</p>
+                </div>
+                    <div class="form-group">
+    
+                        <label for="profession">Profession</label>
+        
+                        <input class="form-control" type="text" id="profession" name="profesion" #profession="ngModel" ngModel>
+        
+                        <div
+                    *ngif="profession.touched && profession.invalid " class="alert alert-danger">
+                    <p *ngIf="profession.hasError('required')">Firstname is required</p>
+                </div>
+                    </div>
+                    <div class="form-group">
+    
+                        <label for="dateOfBirth">Date of birth</label>
+        
+                        <input class="form-control" type="date" id="dateOfBirth" name="dateOfBirth" #dateofbirth="ngModel" ngModel>
+        
+                        <div
+                        *ngif="dateofbirth.touched && dateofbirth.invalid " class="alert alert-danger">
+                        <p *ngIf="dateofbirth.hasError('required')">Firstname is required</p>
+                    </div>
+                    </div>
+
+                    <div class="form-control">
+                        <button type="submit" [disabled]="!userForm.valid">Submit</button>
+                    </div>
+    
+    
+                </div>
+            </form>
+            
+    
+        </div>
+    </div>
+    
+    
+</div>
+

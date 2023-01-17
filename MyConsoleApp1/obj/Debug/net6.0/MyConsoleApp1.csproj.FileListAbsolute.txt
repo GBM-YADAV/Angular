@@ -1,0 +1,15 @@
+D:\MyConsoleApp1\bin\Debug\net6.0\MyConsoleApp1.exe
+D:\MyConsoleApp1\bin\Debug\net6.0\MyConsoleApp1.deps.json
+D:\MyConsoleApp1\bin\Debug\net6.0\MyConsoleApp1.runtimeconfig.json
+D:\MyConsoleApp1\bin\Debug\net6.0\MyConsoleApp1.dll
+D:\MyConsoleApp1\bin\Debug\net6.0\MyConsoleApp1.pdb
+D:\MyConsoleApp1\obj\Debug\net6.0\MyConsoleApp1.csproj.AssemblyReference.cache
+D:\MyConsoleApp1\obj\Debug\net6.0\MyConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyConsoleApp1\obj\Debug\net6.0\MyConsoleApp1.AssemblyInfoInputs.cache
+D:\MyConsoleApp1\obj\Debug\net6.0\MyConsoleApp1.AssemblyInfo.cs
+D:\MyConsoleApp1\obj\Debug\net6.0\MyConsoleApp1.csproj.CoreCompileInputs.cache
+D:\MyConsoleApp1\obj\Debug\net6.0\MyConsoleApp1.dll
+D:\MyConsoleApp1\obj\Debug\net6.0\refint\MyConsoleApp1.dll
+D:\MyConsoleApp1\obj\Debug\net6.0\MyConsoleApp1.pdb
+D:\MyConsoleApp1\obj\Debug\net6.0\MyConsoleApp1.genruntimeconfig.cache
+D:\MyConsoleApp1\obj\Debug\net6.0\ref\MyConsoleApp1.dll

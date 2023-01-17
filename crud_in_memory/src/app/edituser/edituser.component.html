@@ -1,0 +1,63 @@
+
+<div class="row">
+    <div class="col-md-6 mx-auto">
+
+        <h1>Edit User</h1>
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+            <div class="form-group">
+                <label for="firstname">First Name </label>
+                <input class="form-control" type="text" id="firstname" name="firstname" formControlName="firstname">
+                <span class="text-danger"  *ngIf="(userFormControl.firstname.touched || sumbitted) && userFormControl.firstname.errors">
+                    firstname is required to have minimum 4 characters
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name </label>
+                <input class="form-control" type="text" id="lastname" name="lastname" formControlName="lastname">
+                <span class="text-danger"  *ngIf="(userFormControl.firstname.touched || sumbitted) && userFormControl.firstname.errors">
+                    firstname is required to have minimum 4 characters
+                </span>
+            </div>
+            <div class="form-group">
+
+                <label for="email">Email</label>
+
+                <input class="form-control" type="text" id="email" name="email" formControlName="email">
+
+                <span *ngIf="userFormControl.email.errors && (sumbitted ||userFormControl.email.touched)">
+
+                    email pattern not valid
+
+                </span>
+                <div class="form-group">
+
+                    <label for="profession">Profession</label>
+    
+                    <input class="form-control" type="text" id="profession" name="profesion" formControlName="profession">
+    
+                    <span class="text-danger"  *ngIf="(userFormControl.profession.touched || sumbitted) && userFormControl.profession.errors">
+                        enter ur profession correctly
+                    </span>
+                </div>
+                <div class="form-control">
+                    <button type="submit" [disabled]="!userForm.valid">Submit</button>
+                </div>
+
+
+            </div>
+        </form>
+        
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
