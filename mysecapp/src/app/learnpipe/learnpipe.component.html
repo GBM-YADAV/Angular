@@ -1,0 +1,23 @@
+<h1>PIpe Study</h1>
+<div class="container">
+<table class="table table-border">
+    <tr><th>Code</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Annual salary</th>
+        <th>Date Of Birth</th>
+        <th>Date in dd/MM/yyyy</th>
+    </tr>
+    <tr *ngFor="let E of employees">
+        <td>{{E.code}}</td>
+        <td>{{E.name|uppercase}}</td>
+        <td>{{E.gender}}</td>
+        <td>{{E.annualSalary|currency:"INR"}}</td>
+        
+        <td>{{E.dateOfBirth|date:'shorttime'}}</td>
+        <td>{{E.dateOfBirth|date:'dd/MM/yyyy'}}</td>
+        
+    </tr>
+
+</table>
+</div>

@@ -1,0 +1,27 @@
+
+<h1>*ngif directory</h1>
+<div *ngIf="false">
+    <h2> this come if it is true</h2>
+    <h1>structural directive example</h1>
+</div>
+
+<div *ngIf="true; else id_sele">
+    <h2>its  from if  part </h2>
+</div>
+<ng-template #id_sele>
+    <h2>this is from else part</h2>
+</ng-template>
+
+<div [ngSwitch]="number">
+
+    <div *ngSwitchCase="'one'">One is Displayed</div>  
+
+    <div *ngSwitchCase="'two'">Two is Displayed</div>
+
+    <div *ngSwitchCase="'three'">Three is displayed</div>
+
+    <div *ngSwitchDefault>Default Option is Displayed</div>  
+
+    
+
+  </div>

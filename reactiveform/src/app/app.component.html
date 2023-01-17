@@ -1,0 +1,52 @@
+
+<div>
+  <form [formGroup]="contactform" (ngSubmit)="onSubmit()">
+  
+    <label for="firstname">Firstaname</label>
+    <input type="text" name="firstname" formControlName="firstname" placeholder="nter first name"><br>
+
+    <div *ngIf="!firstname?.valid && (firstname?.dirty ||firstname?.touched)">
+
+      First Name should have 4 char minimum
+    
+    </div>
+    <label for="lastname">Lastaname</label>
+    <input type="text" name="lastname" formControlName="lastname" placeholder="nter lasst name"><br>
+
+    <div *ngIf="!lastname?.valid && (lastname?.dirty ||lastname?.touched)">
+
+      last Name should have 10 char maximum
+    
+    </div>
+    <label for="gender">Gender  :</label> 
+    male:
+    <input type="radio" name="gender" value="male">
+    female:
+    <input type="radio" name="gender" value="female"><br>
+    <label for="email">Emial</label>
+    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+    <label for="married">married</label>
+    yes:
+      <input type="radio" name="married" formControlName="married" value="yes">
+    No:
+    <input type="radio" name="married" formControlName="married" value="NO">
+     <br> <label for="country">country </label>
+
+     <select id="country" name="country" formControlName="country">
+ 
+       <option [ngValue]="c.id" *ngFor="let c of countryList">
+ 
+         {{c.name}}
+ 
+       </option>
+ 
+     </select>
+
+    <p>
+
+      <button type="submit" [disabled]="!contactform.valid">Submit</button>
+  
+    </p>
+ 
+  </form>
+</div>

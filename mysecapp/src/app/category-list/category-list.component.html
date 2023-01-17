@@ -1,0 +1,22 @@
+
+<div class="container ">
+  <h2>Table Head Colors</h2>
+  <p>You can use any of the contextual classes to only add a color to the table header:</p>
+  <table class="table">
+    <thead class="table-dark">
+      <tr >
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of catlist; let i=index">
+        <td>{{i}}</td>
+        <td>{{c.CatId}}</td>
+        <td>{{c.CatName}}</td>
+      </tr>   
+    </tbody>
+  </table>
+</div>
+

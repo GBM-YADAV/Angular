@@ -1,0 +1,24 @@
+<form #loginform=ngForm (ngSubmit)=onSumbit(loginform)>
+<p>
+    <label for="firstname">Firstname</label>
+    <input type="text" name="firstname" ngModel placeholder="enter ur first Name">
+
+</p>
+<p>
+    <label for="lastname">Lastname</label>
+    <input type="text" name="lastname" ngModel placeholder="enter ur last Name">
+
+</p>
+<p>
+    <button type="sumbit" value="submit">Submit</button>
+</p>
+
+</form>
+
+
+<h1>Form Data {{loginform.value |json}}</h1>
+
+<h2> Form control touched {{loginform.touched}}</h2>
+<h2>Form control pristine {{loginform.pristine}}</h2>
+<h2>form control dirty{{loginform.dirty}}</h2>
+<h2>form control submited{{loginform.submitted}}</h2>

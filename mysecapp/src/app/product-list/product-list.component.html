@@ -1,0 +1,9 @@
+<h2>Single Product Object Display using String Interpolation</h2>
+
+<h1>Product id : {{Product.Id}}</h1>
+<h1>Product Name: {{Product.ProductName}}</h1>
+<h1>Product Price :{{Product.Price}}</h1>
+
+<ul *ngFor="let p of ProductList">
+   <li>{{p.Id}} {{p.ProductName}}  {{p.Price}}</li>
+</ul>
